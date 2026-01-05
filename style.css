@@ -1,0 +1,113 @@
+/* 設定全局字體與背景 */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #2c3e50;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 玻璃擬態導覽列 */
+.bg-glass-dark {
+    background: rgba(33, 37, 41, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 左側邊欄卡片 */
+.sidebar-card {
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+.upload-box {
+    border: 2px dashed #cbd5e0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.upload-box:hover {
+    border-color: #0d6efd;
+    background-color: #f1f8ff !important;
+}
+
+/* 分頁導覽樣式 */
+.nav-tabs .nav-link {
+    color: #6c757d;
+    border: none;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+}
+.nav-tabs .nav-link.active {
+    color: #0d6efd;
+    background: none;
+    border-bottom-color: #0d6efd;
+}
+
+/* 聊天氣泡優化 */
+.message-bubble {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+.message-bubble table {
+    font-size: 0.85rem;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%; /* 確保表格不破版 */
+}
+
+/* 載入動畫 */
+.typing-indicator span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #adb5bd;
+    border-radius: 50%;
+    margin: 0 2px;
+    animation: bounce 1.4s infinite ease-in-out;
+}
+.typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
+.typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1); }
+}
+
+/* 風險分數圓圈 */
+.risk-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: all 0.5s ease;
+}
+
+/* 進度條漸層 */
+.bg-gradient-primary {
+    background: linear-gradient(90deg, #0d6efd 0%, #0dcaf0 100%);
+}
+
+/* 卡片滑入動畫 */
+.fade-in-up {
+    animation: fadeInUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 風險標籤樣式 */
+.risk-badge {
+    min-width: 100px;
+    text-align: center;
+}
