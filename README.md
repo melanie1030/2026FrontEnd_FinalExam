@@ -111,21 +111,9 @@
 
 2. **開啟專案**
    
-   **方法一：直接開啟（簡單）**
+   **方法：直接開啟（簡單）**
    - 雙擊 `index.html` 在瀏覽器中開啟
    
-   **方法二：使用本地伺服器（推薦）**
-   ```bash
-   # 使用 Python（Python 3）
-   python -m http.server 8000
-   
-   # 或使用 Node.js (需安裝 http-server)
-   npx http-server
-   
-   # 然後在瀏覽器開啟
-   http://localhost:8000
-   ```
-
 3. **設定 API Key**
    - 在左側控制中心輸入您的 Google Gemini API Key
    - 選擇 AI 模型引擎（預設：gemini-3-pro-preview）
@@ -316,14 +304,6 @@
 2. **數據隱私**：上傳的數據會傳送至 Google Gemini API，請注意資料隱私
 3. **瀏覽器相容性**：建議使用最新版本的現代瀏覽器
 4. **網路連線**：需要穩定的網路連線以呼叫 API
-
----
-
-## 🐛 已知問題
-
-- CSV 檔案大小限制為 15,000 字元
-- 圖表渲染依賴 Chart.js 和正確的 JSON 格式
-- 某些特殊 Markdown 語法可能需要手動調整
 
 ---
 
